@@ -45,6 +45,7 @@
 				<configuration>
 					<archive>
 						<manifest>
+							<mainClass>cbztool.MainApp</mainClass>
 						</manifest>
 					</archive>
 					<descriptorRefs>
