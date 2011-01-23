@@ -56,11 +56,11 @@ public final class MainApp {
 				printError("Not a valid pdf output file:" + args[3], this);
 			}
 
-			CbzToPdf cbzPdf = new CbzToPdf(inputCbz.getAbsolutePath(),
+			final CbzToPdf cbzPdf = new CbzToPdf(inputCbz.getAbsolutePath(),
 					outputPdf.getAbsolutePath());
-			cbzPdf.execute();
-
-			System.out.println("Pdf " + cbzPdf.get() + " created.");
+					
+			// execute this on current thread.
+			cbzPdf.doInBackground();					
 		}
 
 	}
