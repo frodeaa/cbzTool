@@ -4,7 +4,7 @@
 
 	<groupId>cbztool</groupId>
 	<artifactId>cbztool</artifactId>
-	<version>0.01</version>
+	<version>0.02-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<url>https://github.com/frodeaa/cbzTool</url>
 
