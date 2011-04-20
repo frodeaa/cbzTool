@@ -12,5 +12,8 @@ Use maven to build the application, and include the *assembly:single* goal if yo
 
 **CBZ to PDF**
  
-	java -jar cbztool-jar-with-dependencies.jar -pdf /path/comic.cbz /path/out.pdf
+	java -jar target/cbztool-jar-with-dependencies.jar -pdf /path/comic.cbz /path/out.pdf
  
+   or
+
+   ./bin/cbz2pdf comicdir pdfdir
