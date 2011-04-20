@@ -1,0 +1,32 @@
+#!/bin/bash
+# Convert CBZ to PDF using cbzTools under *nix systems.
+# CREATED: 20.04.2011
+#
+# INPUT
+#  The source to convert to PDF, a director containing CBZ files or a CBZ file
+#
+# DEST
+#  The directory to write the PDF(s) to.
+#  
+
+CBZTOOL=target/cbztool-jar-with-dependencies.jar
+
+if [ -z "$1" ]; then
+	INPUT=`pwd`
+	DEST=`pwd`		
+elif [ -z "$2" ]; then
+	INPUT=$1
+	DEST=$1
+else
+	INPUT=$1
+	DEST=$2
+fi
+
+find ${INPUT} -name '*.cbz' | while read FILE
+do
+	PDF=${DEST}/${FILE##*/}.pdf
+	java -jar $CBZTOOL -pdf $FILE $PDF
+	echo "${FILE} -> ${PDF}"
+done
+
+	
