@@ -57,4 +57,11 @@
 		</plugins>
 	</build>
 
+	<scm>
+		<connection>scm:git:git@github.com:${git-user}/cbzTool.git</connection>
+		<url>scm:git:git@github.com:${git-user}/cbzTool.git</url>
+		<developerConnection>scm:git:git@github.com:${git-user}/cbzTool.git
+		</developerConnection>
+	</scm>
+
 </project>
