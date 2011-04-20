@@ -99,7 +99,6 @@ public final class MainApp {
 		try {
 		    delegator.handle(args);
 		} catch (Exception e) {
-		    e.printStackTrace();
 		    printError(e.getMessage(), null);
 		}
 		System.exit(0);

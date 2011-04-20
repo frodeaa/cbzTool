@@ -98,7 +98,6 @@ public class ZipIterator<E> implements Iterator<E>, Iterable<E> {
 		currentEntry = zip.getNextEntry();
 	    } while (currentEntry != null && !reader.accept(currentEntry));
 	} catch (IOException e) {
-	    e.printStackTrace();
 	    return false;
 	}
 	return currentEntry != null;
@@ -114,7 +113,6 @@ public class ZipIterator<E> implements Iterator<E>, Iterable<E> {
 	try {
 	    return reader.read(zip);
 	} catch (IOException e) {
-	    e.printStackTrace();
 	    return null;
 	}
     }
