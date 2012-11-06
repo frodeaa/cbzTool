@@ -4,7 +4,7 @@ A collection of tools for downloading and converting CBZ files.
 
 # Setup
 
-Use maven to build the application, and include the *assembly:single* goal if you want to create a runnable JAR containing all dependencies.
+Use maven to build the application, and include the *assembly:single* goal if you want to create a runnable JAR with all dependencies.
 
 	mvn clean install assembly:single
 
